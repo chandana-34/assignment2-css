@@ -1,0 +1,247 @@
+1. What CSS stands for, and what is it?
+
+CSS is the abbreviation for a cascading style sheet. It is the design language used to style HTML elements. In layman’s terms, CSS is the structure to design webpages and make them look good.
+
+
+2. How could CSS be assigned to HTML elements?
+
+CSS can be added to HTML elements in various ways as discussed below-
+
+Inline CSS – adding CSS as the style attributes of HTML elements in its tag. 
+Embedded CSS – adding CSS using <style> attribute in the head section of the HTML document. 
+External CSS – a separately created CSS file can be attached to HTML document using <link> tag to style HTML elements in it.
+3. Explain pseudo-elements?
+
+To style a particular part or section of an element, we can make use of Pseudo-elements.
+
+4. What is the need to use pseudo-elements? 
+
+You could design the first letter, the first paragraph, or insert texts and shapes after or before elements using pseudo-elements.
+
+5. Define pseudo-classes and their use?
+
+Pseudo-classes help in styling elements when they are in a particular state, and it could also be used to style certain occurrences of elements in a row.
+
+For example, you can use pseudo-classes to style an element when the mouse is pointed on it. Pseudo-classes start with a single semicolon like given below-
+
+.ul li:first-child { 
+  color: red;
+}
+CSS
+6. Describe selectors in CSS?
+
+Selectors in CSS are used to define the elements on which styling is to be applied. 
+
+7. What are the different kinds of selectors in CSS?
+
+Here are three different kinds of selectors. Class, Id, and tags are three different selectors to target classes, IDs, and tags created in the HTML document.
+
+ 8. How to target IDs in CSS?
+
+To target an ID’ specified in HTML, we start with # and then write an ID name, followed by styling features in curly braces. Given below is an example-
+
+#header {
+ background-color: blue;
+}
+
+CSS
+9. What does cascading refer to in CSS? 
+
+Cascading in CSS refers to the power of CSS to be able to style elements within elements and other more specific elements. 
+
+There are rules to design every element and then states to style some parts of these elements further.
+
+10. What are some advantages of using CSS?
+
+There are various advantages of using CSS to style webpages like-
+
+It makes webpages look attractive.
+It loads fast. 
+It is easy to write and maintain
+It could work the same on multiple devices.
+
+11. What do you mean by the universal selector in CSS?
+
+Universal selector helps style any element type in an HTML document. 
+
+* { 
+   margin: 0;
+   padding: 0;
+   color: #e4e4e4;
+}
+CSS
+The code above could style the content of all elements.
+
+12. Can you define descendant selector in CSS?
+
+The descendant selector in CSS is useful in styling elements that lie within other items.
+
+13. How would you target components around or within other elements?
+To target a class within a class, we can write .class .subclass { … }, this code would target subclass within class. One more example is as below
+
+nav .nav-item { 
+  color: #000000;
+  display: inline-block;
+}
+
+CSS
+To target a class immediately inside the parent class, you can write a syntax as below:
+
+.class > .childclass { 
+  color: red;
+  display: inline-block;
+}
+
+nav .nav-item { 
+  color: black;
+  display: inline-block;
+}
+CSS
+ 14. Which property can control the position of an image in the background?
+
+The position of the image in the background can be controlled using the “background-position” property.
+
+15. What attribute selector does?
+
+An attribute selector helps style an HTML element with a specific attribute. For example, the input element with text attribute can be styled as follows:
+
+input[type = “text”]{
+  color: #4e4e4e;
+  background: white;
+}
+CSS
+This would style all the text inside the input element.
+
+16. Why do we use float property in CSS?
+
+The float property help in positioning HTML elements horizontally. We could align an element at the right, left using the float property. One example is:
+
+.class {
+ float: left; 
+}
+CSS
+17. How CSS3 differ from CSS?
+
+CSS was mostly constructed to format HTML documents, but CSS3 is more helpful in crafting good web designs, animation. CSS did not have all the required features, but CSS3 has them all(mostly) like layer design and page elements. CSS3, unlike CSS, can split into modules.
+
+18. Why do we use the word-break property in CSS3?
+
+To define how words would break when we reach the end of a line, we use the word-break property. The syntax is as follows:
+
+p {
+   word-break: break-all;
+}
+CSS
+19. Explain gradient?
+
+Gradient helps show smooth transitions of two or more colors in CSS3.
+
+20. What are the different kinds of gradient?
+
+Gradients in CSS3 are of two types- radial and linear gradients. 
+
+21. List some selectors in CSS3?
+
+Some of the selectors in CSS3 are as follows-
+
+Child Combinator
+Descendant Selector
+General Sibling Selector
+Adjacent Sibling Combinator
+Attribute Selector
+Universal Selector
+ID Selector
+Element Type Selector
+Class Selector
+Pseudo-element
+
+21. Explain attr()
+
+The attr() is a function that is helpful in getting the value of an attribute of a selected element and then utilize the value in styling. 
+
+List the supported media types in CSS3.
+
+CSS supports aggregate of 10 media types. All of them are listed below-
+
+Screen
+Projection
+TV
+Handheld
+Print
+TTY
+Aural
+Embossed
+Braille
+All
+
+22. What is the way to create rounded corners in CSS3?
+
+The border-radius property is used to create rounded corners in CSS3. The radius of any element’s edge is determined by border-radius property. 
+
+23. Elucidate the way to add a border image to an element? 
+
+An image could be used as a border to an element with the help of border-image property as shown below-
+
+#img {
+    padding: 15px;
+    border: 10px solid transparent;
+    border-image: url(border.png) 30 round;
+}
+CSS
+
+24. What is the way to draw up shadow effects?
+
+Shadow effects in CSS3 are created using the box-shadow property. This property would add shadow effects around the element’s frame. 
+
+25. Explain the media query?
+
+In order to create a responsive web design or customized style sheet, we could make use of the media query technique. This helps designers create responsive pages for mobiles, desktops and other devices.
+
+26. Why is HSL() used?
+
+In CSS3, HSL() allows designers to set a color value by determining hue, saturation, and light values.
+
+27. What are some new color properties released with CSS3?
+
+CSS3 gives designers and users a lot of options to optimize and set colors for styling. Color options like HSLA, HSL, and RGBA are available for better styling and these options have the capability to create semi-transparent colors.
+
+28. What are the animations in CSS3?
+
+Animations allow gradual transmission of elements from one style to another without using any sort of flash or JS. We need to set some keyframes to apply animations.
+
+29. Do you know about calc() in CSS3?
+
+The calc() option enables designers to use addition, subtraction, multiplication, and division expressions as component values.
+
+30. What are new Text features available in CSS3?
+
+With CSS3, many new features have been added to style webpages. Text related new features have also been introduced like-
+
+Embossed CSS3 text effect
+Subtle CSS3 Text Style
+3D text effect
+Text shadow effect
+Letterpress text effect
+Date display technique
+Awesome Anaglyphic text effect
+Text rotation
+
+31. What is Tweening?
+
+In order to create intermediate frames between twp images to get the appearance of the first image developing into a second image, the process of Tweening is used. Tweening is helpful in creating animations. 
+
+32. What is the CSS image scripts?
+
+When a group of images is placed into one image, it is called CSS image scripts.
+
+33. How is CSS image scripts beneficial?
+
+CSS image scripts help reducing webpage load time and request number to the server. It could show multiple images into a single webpage.
+
+34. Define CSS Specificity?
+
+It is a rank used to determine which style declaration is to be used to an element.
+
+35. Explain CSS flexbox?
+
+To design a flexible, responsive layout structure, we can make use of CSS flexbox. It does not use float or positioning property of CSS. We could use the CSS flexbox after defining a flex container. 
